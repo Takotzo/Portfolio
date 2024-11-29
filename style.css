@@ -1,3 +1,14 @@
-﻿body{
+﻿:root {
+    --primary-color: #4975a2;
+    --secondary-color: #83b8ee;
+    --background-color: #1e3955;
+    --haeder-font-color: #553e15;
+    --text-font-color: #a28149;
+}
+
+body{
     font-family: Arial, Courier, serif;
+}
+header{
+    background-color: var(--background-color);
 }
