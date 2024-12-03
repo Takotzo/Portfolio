@@ -16,33 +16,49 @@
     <main>
         <header class="container-fluid text-center">
             <nav class="blue row" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">Home</li>
-                </ol>
-                <div>
-                    <h1 class="dark-brown">Øyvind Ole B. Roberg</h1>
+                <div class="col-md-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active blue" style="color: #4975a2" aria-current="page" >Home</li>
+                    </ol>
+                </div>
+                <div class="col-md-4 ms-auto">
+                    <a class="to-right dark-brown" href="https://www.linkedin.com/in/oeyvind-ole-roberg" style="text-decoration: none; font-weight: bold;"><img src="Images/Logos/In-White-48.png" height="54" width="54"/></a>
+                    <a class="to-right dark-brown" href="mailto:oyvrob@gmail.com" style="text-decoration: none; font-weight: bold;"><img src="Images/google.png" height="55" width="55"/></a>
+                    <a class="to-right dark-brown" href="https://github.com/Takotzo" style="text-decoration: none; font-weight: bold;"><img src="Images/github-mark.png" height="55" width="55"/></a>
+                    <a class="to-right dark-brown" href="https://takotzo.itch.io" style="text-decoration: none; font-weight: bold;"><img src="Images/Logos/itchio-textless-black.png" height="55" width="55"/></a>
                 </div>
             </nav>
             <div class="row blue">
                 <div class="col" ></div>
                 <div class="col-6" id="player">
-                    <iframe style="max-width: 100%;height: auto;" title="Øyvind Ole Roberg's Showreel"
+                    <iframe style="width: 100%;height: auto;" src="https://www.youtube.com/embed/6pA61Er4rpQ?si=JDACZWnD3O3U2p9z" title="Øyvind Ole Roberg's Showreel"
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="col"></div>
             </div>
+            <div class="row">
+                <h1 class="light-brown">Hi I'm Øyvind Ole B. Roberg</h1>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <p class="col-9" style="color: #a28149; font-size: 20px">
+                    I am an aspiring technical artist from Norway, currently pursuing a Bachelor's degree in Game and Entertainment Technology at Nord University. I am
+                    passionate about blending creativity and technical expertise to create immersive and visually stunning gaming experiences.
+                </p>
+                <div class="col"></div>
+            </div>
         </header>
         <article class="container-fluid text-center blue">
-            <div style="padding-bottom: 4vh" class="row">
+            <div style="padding-bottom: 4vh" class="row ">
                 <div class="col-5 container-fluid text-center light-blue">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="image-of-work col-6">
                             <img src="Images/FoldingBotScreenshot.png">
                         </div>
                         <div class="col">
                             <h1 class="dark-brown">Folding Robot</h1>
-                            <p class="light-brown">In this project I worked with modelling, rigging and animating an 8 limbed character. </p>
+                            <p class="dark-brown">In this project I worked with modelling, rigging and animating an 8 limbed character. </p>
                         </div>
                     </div>
                     <div class="accordion" id="whateverWorks" style="padding-bottom: 10vh">
@@ -99,26 +115,41 @@
                 </div>
                 <div class="col-2"></div>
                 <div class="col-5 container-fluid text-center light-blue">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="image-of-work col-6">
                             <img src="Images/RiveScreenshot.png" height="auto" width="100%"/>
                         </div>
                         <div class="col">
                             <h1 class="dark-brown">Rive to Unity Implementation</h1>
-                            <p class="light-brown">Short Description</p>
-                            <p class="light-brown">Contributors</p>
+                            <p class="dark-brown">Short Description</p>
                         </div>
                     </div>
-                    <div style="padding-bottom: 10vh" class="accordion row" id="accordionExample">
+                    <div style="padding-bottom: 10vh" class="accordion" id="coouldThatGoNow">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     What did I do?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#coouldThatGoNow">
                                 <div class="accordion-body">
-                                    Text about the project
+                                    <p>
+                                        I worked with a UI creation tool called <strong>Rive</strong> to design and implement an interactive user interface.
+                                        Rive utilizes inputs to switch between animations, which can also send signals to Unity for further interaction.
+                                        After creating the UI and configuring all the events within Rive, I integrated it into Unity by developing a script
+                                        to manage these events and execute the appropriate methods, such as handling <code>resume</code> and <code>exit</code>
+                                        button actions.
+                                    </p>
+                                    <p>
+                                        Some UI elements needed to be dynamically updated at runtime, so I designed accessible methods to allow team members
+                                        to easily modify these elements during development. Additionally, certain elements, such as sliders, required sending
+                                        their values to inform other components about their current state.
+                                    </p>
+                                    <p>
+                                        This was my first experience working with Rive, and it provided an excellent opportunity to deepen my understanding of
+                                        the tool and its integration with Unity. I utilized various resources provided by Rive to learn how its system communicates
+                                        with Unity, enabling me to effectively extract inputs and events and implement them in a cohesive workflow.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -128,21 +159,74 @@
                                     Project Description
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#coouldThatGoNow">
                                 <div class="accordion-body">
-                                    Tesxt
+                                    <p>
+                                        The UI was developed for a game called <strong>Flashback</strong>, a university project that ran from October to December. In the game, players experience a narrative where they recall events from the past and relive them through engaging minigames.
+                                        My role focused on designing and implementing an interactive and dynamic user interface, ensuring it enhanced the game's storytelling and gameplay.
+                                    </p>
+                                    <p>
+                                        The project did not necessarily require Rive implementations and could have been completed using Unity alone. However, it provided a valuable opportunity to explore and experiment with a new tool, broadening my technical skillset.
+                                    </p>
+                                    <p>
+                                        Working with a team of fellow students, I contributed to the technical development while collaborating closely with designers and programmers to ensure the UI aligned with the game's overall vision. One key challenge was integrating Rive's unique animation system with Unity, which required researching and applying innovative solutions.
+                                    </p>
+                                    <p>
+                                        This project taught me the value of experimenting with new tools and technologies, as well as the importance of creating accessible systems that empower team members. Looking back, I would like to explore ways to further optimize the Rive-Unity integration for better performance and extend the UI's interactivity for future projects.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Contributor
+                                    Game, Scripts & Contributors to Project
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#coouldThatGoNow">
                                 <div class="accordion-body">
-                                    <p>LastText</p>
+                                    <p>
+                                        Check out Flashback on <a href="https://marzlars.itch.io/flashback" target="_blank" rel="noopener noreferrer">itch.io</a>!
+                                    </p>
+                                    <p>
+                                        <a href="" download="YourScript.cs">Download the C# Script for displaying the Rive on Unity.</a>
+                                    </p>
+                                    <p>
+                                        <a href="DownloadableScripts/EnviromentShade.cs" download="YourScript.cs">Download the C# Script that handles the Events based on the current Rive scene.</a>
+                                    </p>
+                                    <p>
+                                        <a href="DownloadableScripts/EnviromentShade.cs" download="YourScript.cs">Download the C# Script that handles the HUD controllers.</a>
+                                    </p>
+                                    <p>
+                                        This project was a collaborative effort with valuable contributions from the following team members:
+                                    </p>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/haakon-alstad/" target="_blank" rel="noopener noreferrer">
+                                                Håkon Alstad
+                                            </a> - Role: <span>Team Leader, Sound Designer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/lars-gustav-fossen/" target="_blank" rel="noopener noreferrer">
+                                                Lars Gustav Fossen
+                                            </a> - Role: <span>Programmer, Game Designer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/torjebergersen/" target="_blank" rel="noopener noreferrer">
+                                                Torje Bergersen
+                                            </a> - Role: <span>Programmer, Game Designer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/noa-mortensen/" target="_blank" rel="noopener noreferrer">
+                                                Noa Mortensen
+                                            </a> - Role: <span>3D-Artist, Programmer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/anatoli-maroz-41b6a31b4/" target="_blank" rel="noopener noreferrer">
+                                                Anatoli Maroz
+                                            </a> - Role: <span>Programmer</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -153,11 +237,11 @@
                 <div class="col-5 container-fluid text-center light-blue">
                     <div class="row">
                         <div class="image-of-work col-6">
-                            <img src="Images/FoldingBotScreenshot.png">
+                            <img src="Images/ColorPicker.png">
                         </div>
                         <div class="col">
                             <h1 class="dark-brown">Colour Picker</h1>
-                            <p class="light-brown">Developed a reusable and user-friendly script to streamline functionality for others.</p>
+                            <p class="dark-brown">Developed a reusable and user-friendly script to streamline functionality for others.</p>
                         </div>
                     </div>
                     <div class="accordion" id="itReallyWorks" style="padding-bottom: 10vh">
@@ -169,7 +253,20 @@
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#itReallyWorks">
                                 <div class="accordion-body">
-                                    Text about the project
+                                    <p>
+                                        For this project, we needed the ability to change the color of each object at runtime. To achieve this, I created a <strong>script</strong> that automatically changes the material of an object to the corresponding color when needed. To streamline the process and make it more maintainable, I designed a separate object that holds all the <strong>materials</strong> and <strong>colors</strong>. The script retrieves the appropriate material from this object based on the selected color and shade, which I defined within the script. This setup makes it simple for other team members working on level design to attach the <strong>script</strong> to their objects and easily assign the correct color.
+                                    </p>
+                                    <p>
+                                        This approach also improves workflow efficiency, as level designers no longer need to manually assign colors to each object. By simply attaching the <strong>script</strong> and selecting a color from the predefined list, they can quickly customize objects without worrying about the technical details of material handling.
+                                    </p>
+                                    <p>
+                                        Additionally, when the scene loads, the <strong>script</strong> automatically assigns a default <code>grey</code> color to each object, ensuring that level editors don't need to worry about manually setting the material for each object.
+                                    </p>
+                                    <p>
+                                        This system was designed with performance in mind. By centralizing all materials and colors in one object, we minimize resource usage and avoid redundant assignments, making the color change process efficient even in complex scenes.
+                                    </p>
+
+
                                 </div>
                             </div>
                         </div>
@@ -181,19 +278,73 @@
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#itReallyWorks">
                                 <div class="accordion-body">
-                                    Tesxt
+                                    <p>
+                                        This script was developed for the game <strong>Tiny Alien</strong>, where an alien gets stuck on a planet and needs to collect crayons to fuel their ship and color the world around them. The script was critical to the game's functionality and went through a few iterations as the game's design evolved.
+                                    </p>
+                                    <p>
+                                        Initially, I created a separate script to manage the spawning of crayons in different scenes and their interactions when collected. Our original concept involved each scene starting in grey, with the player collecting colors to gradually colorize the world. However, this idea was later adjusted, and we decided that one color would be used to color the entire game. Thanks to the use of <strong>if statements</strong> in the script, I was able to easily adapt to this new design change and implement it smoothly.
+                                    </p>
+                                    <p>
+                                        After completing the project and reflecting on my work, I’ve been considering the possibility that using Unity's <strong>Shader Graph</strong> could have been a more efficient solution than the one I implemented. Using shaders might have allowed for a more flexible and visually appealing way to handle color changes across the game. This is something I plan to explore further in future projects.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                    Contributor
+                                    Game, Scripts & Contributors to Project
                                 </button>
                             </h2>
                             <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#itReallyWorks">
                                 <div class="accordion-body">
-                                    <p>LastText</p>
+                                    <p>
+                                        Check out Tiny Alien on <a href="https://takotzo.itch.io/tiny-alien" target="_blank" rel="noopener noreferrer">itch.io</a>!
+                                    </p>
+                                    <p>
+                                        <a href="DownloadableScripts/ColourHolder.cs" download="ColourHolder.cs">Download the C# Script that holds all the colours.</a>
+                                    </p>
+                                    <p>
+                                        <a href="DownloadableScripts/EnviromentShade.cs" download="EnvironmentShade.cs">Download the C# Script that handles the colour change.</a>
+                                    </p>
+                                    <p>
+                                        This project was a collaborative effort with valuable contributions from the following team members:
+                                    </p>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/inger-marie-ask/" target="_blank" rel="noopener noreferrer">
+                                                Inger-Marie Ask
+                                            </a> - Role: <span>Team Leader, Game Designer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/lars-gustav-fossen/" target="_blank" rel="noopener noreferrer">
+                                                Lars Gustav Fossen
+                                            </a> - Role: <span>Programmer, Game Designer</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/noa-mortensen/" target="_blank" rel="noopener noreferrer">
+                                                Noa Mortensen
+                                            </a> - Role: <span>3D-Artist, Programmer</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Alexandra Simon
+                                            </span> - Role: <span>3D/2D Artist</span>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/lorenzo-dell-aquila-b6863722b/" target="_blank" rel="noopener noreferrer">
+                                                Lorenzo Dell’aquila
+                                            </a>  - Role: <span>3D Artist, Level Builder</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Paul Pemba
+                                            </span> - Role: <span>Level builder</span>
+                                        </li>
+                                    </ul>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -204,7 +355,7 @@
                     <div class="row">
                         <div class="col">
                             <h1 class="dark-brown">Skills</h1>
-                            <p class="light-brown">Tools and software I have experience in</p>
+                            <p class="dark-brown">Tools and software I have experience in</p>
                         </div>
                     </div>
                     <div class="accordion" id="seriouslyThatEasy" style="padding-bottom: 10vh">
@@ -217,7 +368,7 @@
                             <div id="collapseTen" class="accordion-collapse collapse show" data-bs-parent="#seriouslyThatEasy">
                                 <div class="accordion-body container">
                                     <p class="row">
-                                        <img class="col-6" src="Images/Logos/Unity.png"  >
+                                        <img class="col-6" style="height: 12vh" src="Images/Logos/Unity.png"  >
                                         <img class="col-3" src="Images/Logos/godot.png"  >
                                         <img class="col-3" src="Images/Logos/UnrealEngine.png"  >
                                     </p>
@@ -238,7 +389,6 @@
                                         <img class="col-2" src="Images/Logos/HTML5.png">
                                         <img class="col-2" src="Images/Logos/CSS.png">
                                         <img class="col-2" src="Images/Logos/js.png">
-
                                     </p>
                                 </div>
                             </div>
@@ -258,7 +408,6 @@
                                         <img class="col-2" src="Images/Logos/premiere-pro.png">
                                         <img class="col-2" src="Images/Logos/DaVinci_Resolve_Studio.png">
                                         <img class="col-2" src="Images/Logos/Inkscape.png">
-
                                     </p>
                                 </div>
                             </div>
@@ -275,9 +424,6 @@
                                         <img class="col-3" src="Images/Logos/Rive.png">
                                         <img class="col-3" src="Images/Logos/github-mark.png">
                                         <img class="col-6" src="Images/Logos/fmod.png">
-
-
-
                                     </p>
                                 </div>
                             </div>
@@ -293,9 +439,10 @@
                         <div class="row">
                             <h1>Message Me:</h1>
                             <div class="col">
-                                <div><a class="to-right light-brown" href="https://www.linkedin.com/in/oeyvind-ole-roberg" style="text-decoration: none; font-weight: bold;"><img src="Images/LI-In-Bug.png" height="54" width="63"/>www.linkedin.com/in/oeyvind-ole-roberg</a></div>
-                                <div><a class="to-right light-brown" href="mailto:oyvrob@gmail.com" style="text-decoration: none; font-weight: bold;"><img src="Images/google.png" height="55" width="55"/>oyvrob@gmail.com</a></div>
-                                <div><a class="to-right light-brown" href="https://github.com/Takotzo" style="text-decoration: none; font-weight: bold;"><img src="Images/github-mark.png" height="55" width="55"/>https://github.com/Takotzo</a></div>
+                                <div><a class="to-right dark-brown" href="https://www.linkedin.com/in/oeyvind-ole-roberg" style="text-decoration: none; font-weight: bold;"><img src="Images/Logos/LinkedIn-Blue-40@2x.png" height="55" width="auto"/></a></div>
+                                <div><a class="to-right dark-brown" href="mailto:oyvrob@gmail.com" style="text-decoration: none; font-weight: bold;"><img src="Images/google.png" height="55" width="auto"/>oyvrob@gmail.com</a></div>
+                                <div><a class="to-right dark-brown" href="https://github.com/Takotzo" style="text-decoration: none; font-weight: bold;"><img src="Images/github-mark.png" height="55" width="auto"/><img src="Images/Logos/GitHub_Logo.png" height="55" width="auto"/></a></div>
+                                <div><a class="to-right dark-brown" href="https://takotzo.itch.io" style="text-decoration: none; font-weight: bold;"><img src="Images/Logos/path1.png" height="50" width="auto"/></a></div>
                             </div>
                         </div>
                     </div>
@@ -303,7 +450,6 @@
             </div>
         </footer>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>

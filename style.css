@@ -49,6 +49,10 @@ nav{
 .row{
     padding: 2vh;
 }
+.no-bullets {
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 0; /* Removes default left padding */
+}
 
 
 @media (min-width: 144px) {
