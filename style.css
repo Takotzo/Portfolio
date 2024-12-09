@@ -1,6 +1,6 @@
 ﻿:root {
     --primary-color: #4975a2;
-    --secondary-color: #83b8ee;
+    --light-blue: #83b8ee;
     --background-color: #1e3955;
     --haeder-font-color: #553e15;
     --text-font-color: #a28149;
@@ -25,7 +25,7 @@ nav{
     background-color: var(--background-color);
 }
 .light-blue {
-    background-color: var(--secondary-color);
+    background-color: var(--light-blue);
 }
 .light-brown {
     color: var(--text-font-color);
@@ -53,6 +53,15 @@ nav{
     list-style-type: none; /* Removes the bullet points */
     padding-left: 0; /* Removes default left padding */
 }
+.show-box {
+    background-color: var(--light-blue);
+
+}
+.fit-images-in-shape img{
+    height: 5vw;
+    width: auto;
+}
+
 
 #player iframe{
     position: absolute;
