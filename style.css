@@ -43,7 +43,7 @@ nav{
 }
 
 .to-right{
-    margin:4vh;
+    margin:4vw;
 }
 
 .row{
@@ -55,11 +55,15 @@ nav{
 }
 .show-box {
     background-color: var(--light-blue);
-
+    height: 100%;
+    border-radius: 5px;
 }
 .fit-images-in-shape img{
     height: 5vw;
     width: auto;
+}
+.icon-text{
+    font-size: 8px;
 }
 
 
