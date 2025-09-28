@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projection Mapping with Mixed Reality</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+
+  <link rel="icon" href="../Images/BatagamesIcon.png" type="">
+</head>
+<body class="light-blue accordion-size">
+  <div class="row align-items-center">
+    <div class="image-of-work col-6">
+      <img src="../Images/projectionMapping.png" />
+    </div>
+    <div class="col">
+      <h1 class="dark-brown">Projection Mapping with MR</h1>
+      <p class="dark-brown">Created a unique experience where we combined the technologies of <strong>Projection Mapping</strong> and <strong>Mixed Reality</strong>.</p>
+    </div>
+  </div>
+  <div class="accordion" id="projectionMapping-Accordian">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectionMapping-collapseOne" aria-expanded="false" aria-controls="projectionMapping-collapseOne">
+          Learn more about what I did
+        </button>
+      </h2>
+      <div id="projectionMapping-collapseOne" class="accordion-collapse collapse" data-bs-parent="#projectionMapping-Accordian">
+        <div class="accordion-body">
+          <p>
+            For this project I worked on setting up the projectors, aligning the digital world with the real world
+            and connecting the MR headsets with the projectors.
+          </p>
+          <p>
+            I worked in Unity and found a package which let us easily connect cameras from the Unity scene to the projectors, so they could show the parts
+            of the scene we wanted to be visible in real life. Then it was running some tests locally checking if it was possible by creating the stage in
+            the scene and playing it in the headset.
+          </p>
+          <p>
+            After teh test I started working on connecting multiple headset to the same computer. The setup of the stage is multiple projectors controlled
+            by a PC, while MR headsets connect wireless. I added some networking packages to Unity and made it so that the PC acted as a server host
+            and controlled the entire experience. All the users headsets are synced which means they will all see the same thing and
+            can interact with objects in the scene that updates for them all.
+          </p>
+          <p>
+            <strong>Important:</strong> Assets seen in the experience are not made by us and are assets bought from the Unity Assets Store.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectionMapping-collapseTwo" aria-expanded="false" aria-controls="projectionMapping-collapseTwo">
+          Project Description
+        </button>
+      </h2>
+      <div id="projectionMapping-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectionMapping-Accordian">
+        <div class="accordion-body">
+          <p>
+            This is a school project where we are supposed to explore unique ways of using technologies. My group wanted to study the possibilities of combining
+            a virtual stage or a projection mapped room with MR headset, so that we could bring objects out of the wall and into the room with the observers.
+            With a full visuals of the real world the users can see the pictures shown on the walls and as well whatever objects are going through.
+          </p>
+          <p>
+            We were working on this following the school schedule, until our teacher approached us and wanted us to work full-time for two weeks on this project
+            to showcase it to various stakeholders. The team agreed to the work and we started producing a scene for a Proof of Concept to show them. We went
+            through multiple ideas of what we could show and landed on an underwater experience, with a turtle floating back and forth with fish swimming
+            around.
+          </p>
+          <p>
+            We wanted to add some interaction that would happen with the turtle when it was in the space with the users. So we added a feature where whenever
+            a user touched the turtle it would stop and look around for a few seconds before continuing on its journey.
+          </p>
+          <p>
+            We received a lot of positive feedback from teachers, stakeholders and fellow students who have tested the experience we created.
+          </p>
+          <p>
+            <strong>Important:</strong> Assets seen in the experience are not made by us and are assets bought from the assets store.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectionMapping-collapseThree" aria-expanded="false" aria-controls="projectionMapping-collapseThree">
+          Contributors to Project
+        </button>
+      </h2>
+      <div id="projectionMapping-collapseThree" class="accordion-collapse collapse" data-bs-parent="#rive-implementation-panel">
+        <div class="accordion-body">
+          <!--  Future link to video when it is created<p>
+              Check out some clips of what people experienced in the headset on <a href="https://marzlars.itch.io/flashback" target="_blank" rel="noopener noreferrer">YouTube</a>!
+          </p>-->
+          <p>
+            This project was a collaborative effort with valuable contributions from the following team members:
+          </p>
+          <ul class="no-bullets">
+            <li>
+              <a href="https://www.linkedin.com/in/tobias-fehn/" target="_blank" rel="noopener noreferrer">
+                Tobias Hol Fehn
+              </a> - Role: <span>Team Leader, Sound Designer</span>
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/jacparraga/" target="_blank" rel="noopener noreferrer">
+                Jacques Parraga-Michitsch
+              </a> - Role: <span>Game & Sound Designer</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <script src="accordionResizer.js"></script>
+
+</body>
+</html>
