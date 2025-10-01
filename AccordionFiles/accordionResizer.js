@@ -1,11 +1,7 @@
-﻿
-function resizeIframe() {
-    const height = document.documentElement.scrollHeight;
-    window.parent.postMessage({ iframeHeight: height }, "*");
+﻿// Only run if embedded in a parent iframe
+if (window.frameElement) {
+    const resizeObserver = new ResizeObserver(() => {
+        window.frameElement.style.height = document.body.scrollHeight + 15 + "px";
+    });
+    resizeObserver.observe(document.body);
 }
-
-// Call it whenever content changes (e.g., after expanding text)
-document.addEventListener("DOMContentLoaded", resizeIframe);
-window.addEventListener("resize", resizeIframe);
-
-// Example: If buttons expand/collapse content dynamically, call resizeIframe() after that too
