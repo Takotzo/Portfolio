@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blend Shape Creation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+
+  <link rel="icon" href="/Images/BatagamesIcon.png" type="">
+</head>
+
+<body class="light-blue accordion-size">
+<div class="row align-items-center text-center">
+  <div class="image-of-work col-6">
+    <img src="/Images/faceBlendshapes.png" height="auto" width="100%"/>
+  </div>
+  <div class="col">
+    <h1 class="dark-brown">Blend Shape Creation</h1>
+    <p class="dark-brown">Topologised a face in Maya and used its blend shape kit to create a blend shape compatible with Apple's ARKit.</p>
+  </div>
+</div>
+<div   class="accordion" id="faceBlendAccordian">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaceBlendOne" aria-expanded="false" aria-controls="collapseFaceBlendOne">
+        Learn more about what I did
+      </button>
+    </h2>
+    <div id="collapseFaceBlendOne" class="accordion-collapse collapse" data-bs-parent="#faceBlendAccordian">
+      <div class="accordion-body">
+        <p>
+          First I had to create a face to work on, so I got help from a friend and preformed a 3D scan of my face and imported it to Maya.
+          With the scanned head I started retopologizing my face. I studied the muscles in a face and took an image of myself and started
+          sketching the different muscles on my face. I also looked at a lot of examples of how the topology of a face should look like.
+        </p>
+        <p>
+          When the face was retopologizde I started working on the blend shapes. I was following the guidelines given to me on Apple's ARKit
+          site and using techniques my teacher showed us in class, like mirroring and soft select. For every face expression that had a left
+          and right expression (e.g. left and right blink) this was modeled on the same shape but later spitted on two different face shapes
+          so that they would fit the ARKit's naming convention
+        </p>
+        <p>
+          Now I have made a face that are fully adaptable with the Apple's ARKit and usable in aplication as Unity and Unreal Engine.
+        </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaceBlendTwo" aria-expanded="false" aria-controls="collapseFaceBlendTwo">
+        Project Description
+      </button>
+    </h2>
+    <div id="collapseFaceBlendTwo" class="accordion-collapse collapse" data-bs-parent="#faceBlendAccordian">
+      <div class="accordion-body">
+        <p>
+          This was a school assignment I had to complete as part of my CG class. As a class we had a thorough guidance through the process of
+          <strong>Face Retopology</strong>, studying some of the face's muscles and where to create fitting loops in the mesh. After the Face Retopology
+          we started working on animating the different faces and following then namespaces of the Apple's ARKit.
+        </p>
+        <p>
+          Have not received a grade, but received positive feedback from the teachers.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="accordionResizer.js"></script>
+</body>
+</html>

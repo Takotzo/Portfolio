@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rive Implementation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <link rel="icon" href="/Images/BatagamesIcon.png" type="">
+</head>
+<body class="light-blue accordion-size">
+    <div class="row align-items-center text-center">
+        <div class="image-of-work col-6">
+            <img src="/Images/RiveScreenshot.png" height="auto" width="100%"/>
+        </div>
+        <div class="col-6">
+            <h1 class="dark-brown ">Rive to Unity Implementation</h1>
+            <p class="dark-brown">For <strong>Flashback</strong>, I used <strong>Rive</strong> to create an interactive UI, integrating dynamic animations and events into <strong>Unity</strong>.</p>
+        </div>
+    </div>
+    <div   class="accordion" id="rive-implementation-panel">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Learn more about what I did
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#rive-implementation-panel">
+                <div class="accordion-body">
+                    <p>
+                        I worked with a UI creation tool called <strong>Rive</strong> to design and implement an interactive user interface.
+                        Rive utilizes inputs to switch between animations, which can also send signals to Unity for further interaction.
+                        After creating the UI and configuring all the events within Rive, I integrated it into Unity by developing a script
+                        to manage these events and execute the appropriate methods, such as handling <code>resume</code> and <code>exit</code>
+                        button actions.
+                    </p>
+                    <p>
+                        Some UI elements needed to be dynamically updated at runtime, so I designed accessible methods to allow team members
+                        to easily modify these elements during development. Additionally, certain elements, such as sliders, required sending
+                        their values to inform other components about their current state.
+                    </p>
+                    <p>
+                        This was my first experience working with Rive, and it provided an excellent opportunity to deepen my understanding of
+                        the tool and its integration with Unity. I utilized various resources provided by Rive to learn how its system communicates
+                        with Unity, enabling me to effectively extract inputs and events and implement them in a cohesive workflow.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Project Description
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#rive-implementation-panel">
+                <div class="accordion-body">
+                    <p>
+                        The UI was developed for a game called <strong>Flashback</strong>, a university project that ran from October to December. In the game, players experience a narrative where they recall events from the past and relive them through engaging minigames.
+                        My role focused on designing and implementing an interactive and dynamic user interface, ensuring it enhanced the game's storytelling and gameplay.
+                    </p>
+                    <p>
+                        The project did not necessarily require Rive implementations and could have been completed using Unity alone. However, it provided a valuable opportunity to explore and experiment with a new tool, broadening my technical skillset.
+                    </p>
+                    <p>
+                        Working with a team of fellow students, I contributed to the technical development while collaborating closely with designers and programmers to ensure the UI aligned with the game's overall vision. One key challenge was integrating Rive's unique animation system with Unity, which required researching and applying innovative solutions.
+                    </p>
+                    <p>
+                        This project taught me the value of experimenting with new tools and technologies, as well as the importance of creating accessible systems that empower team members. Looking back, I would like to explore ways to further optimize the Rive-Unity integration for better performance and extend the UI's interactivity for future projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Game, Scripts & Contributors to Project
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#rive-implementation-panel">
+                <div class="accordion-body">
+                    <p>
+                        Check out Flashback on <a href="https://marzlars.itch.io/flashback" target="_blank" rel="noopener noreferrer">itch.io</a>!
+                    </p>
+                    <p>
+                        <a href="https://github.com/Takotzo/Portfolio/tree/main/DownloadableScripts/RiveScreen.cs">Have a look at C# Script for displaying the Rive on Unity.</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Takotzo/Portfolio/tree/main/DownloadableScripts/RiveEventHandler.cs">Have a look at C# Script that handles the Events based on the current Rive scene.</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Takotzo/Portfolio/tree/main/DownloadableScripts/GameHudController.cs">Have a look at C# Script that handles the HUD controllers.</a>
+                    </p>
+                    <p>
+                        This project was a collaborative effort with valuable contributions from the following team members:
+                    </p>
+                    <ul class="no-bullets">
+                        <li>
+                            <a href="https://www.linkedin.com/in/haakon-alstad/" target="_blank" rel="noopener noreferrer">
+                                Håkon Alstad
+                            </a> - Role: <span>Team Leader, Sound Designer</span>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lars-gustav-fossen/" target="_blank" rel="noopener noreferrer">
+                                Lars Gustav Fossen
+                            </a> - Role: <span>Programmer, Game Designer</span>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/torjebergersen/" target="_blank" rel="noopener noreferrer">
+                                Torje Bergersen
+                            </a> - Role: <span>Programmer, Game Designer</span>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/noa-mortensen/" target="_blank" rel="noopener noreferrer">
+                                Noa Mortensen
+                            </a> - Role: <span>3D-Artist, Programmer</span>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anatoli-maroz-41b6a31b4/" target="_blank" rel="noopener noreferrer">
+                                Anatoli Maroz
+                            </a> - Role: <span>Programmer</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="accordionResizer.js"></script>
+</body>
+</html>
