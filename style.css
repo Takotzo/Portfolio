@@ -2,7 +2,7 @@
     --primary-color: #4975a2;
     --light-blue: #83b8ee;
     --background-color: #1e3955;
-    --haeder-font-color: #553e15;
+    --header-font-color: #553e15;
     --text-font-color: #a28149;
 }
 
@@ -31,12 +31,12 @@ nav{
     color: var(--text-font-color);
 }
 .dark-brown {
-    color: var(--haeder-font-color);
+    color: var(--header-font-color);
 }
 .image-of-work{
 
-
 }
+
 .image-of-work img{
     width: 100%;
     height: 100%;
@@ -78,7 +78,26 @@ nav{
     height: 100%;
     border: none;
 }
-
+.button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--header-font-color);
+    background-color: var(--light-blue);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    color: var(--text-font-color);
+    background-color: var(--background-color);
+}
 
 #player iframe{
     position: absolute;
