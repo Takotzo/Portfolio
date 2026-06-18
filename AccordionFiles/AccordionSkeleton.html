@@ -26,11 +26,11 @@
 <div class="accordion" id="[name]-panel">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#[name]-collapse-one" aria-expanded="false" aria-controls="[name]-collapse-one">
         Learn more about what I did
       </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#[name]-panel">
+    <div id="[name]-collapse-one" class="accordion-collapse collapse" data-bs-parent="#[name]-panel">
       <div class="accordion-body">
         <p>Content</p>
       </div>
@@ -38,13 +38,34 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse[number]" aria-expanded="false" aria-controls="collapse[number]">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#[name]-collapse-two" aria-expanded="false" aria-controls="[name]-collapse-two">
         Project Description
       </button>
     </h2>
-    <div id="collapse[number]" class="accordion-collapse collapse" data-bs-parent="#[name]-panel">
+    <div id="[name]-collapse-two" class="accordion-collapse collapse" data-bs-parent="#[name]-panel">
       <div class="accordion-body">
         <p>Description</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#[name]-collapse-three" aria-expanded="false" aria-controls="[name]-collapse-three">
+        Contributors to Project
+      </button>
+    </h2>
+    <div id="[name]-collapse-three" class="accordion-collapse collapse" data-bs-parent="#NumericBlastOFF-panel">
+      <div class="accordion-body">
+        <p>
+          This project was a collaborative effort with valuable contributions from the following team members:
+        </p>
+        <ul class="no-bullets">
+          <li>
+            <a href="https://www.linkedin.com/in/inge-seland/" target="_blank" rel="noopener noreferrer">
+              Inge Seland
+            </a> - Role: <span>Team Lead & Developer</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
