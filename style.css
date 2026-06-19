@@ -17,7 +17,9 @@ nav{
     font-size: 24px;
 }
 
-
+.white{
+    color: white;
+}
 .blue {
     background-color: var(--primary-color);
 }
@@ -88,11 +90,11 @@ nav{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
     margin: 4px 2px;
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
+    font-size: 35px;
 }
 .button:hover{
     color: var(--text-font-color);
